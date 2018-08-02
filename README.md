@@ -16,5 +16,5 @@ services:
             - ./:/var/app
         ports:
             - 5000:5000
-        command: ["firebase", "serve"]
+        command: ["firebase", "serve", "-o", "0.0.0.0"]
 ```
