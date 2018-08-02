@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  u:
+    image: mvochoa/firebase-tools:6
+    working_dir: /var/app
+    volumes: 
+      - ./:/var/app
+    command: ["tail", "-f", "/dev/null"]
